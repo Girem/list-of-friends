@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <style>
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      
+      .profile-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      
+      .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      
+      .profile-name {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .profile-title {
+        font-size: 28px;
+        margin: 0;
+      }
+      
+      .profile-subtitle {
+        font-size: 18px;
+        margin: 0;
+        color: #555;
+      }
+      
+      .profile-details {
+        max-width: 500px;
+      }
+      
+      .profile-section-title {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+      
+      .profile-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .profile-list-item {
+        margin-bottom: 10px;
+      }
+      
+      .profile-list-item strong {
+        display: inline-block;
+        width: 150px;
+      }
+      </style>
+    <div class="container">
+        <div class="profile">
+          <div class="profile-header">
+            <img class="profile-img" src="http://placeimg.com/640/480/animals" alt="Profile Image">
+            <div class="profile-name">
+              <h1 class="profile-title">Dr. Steve Morissette</h1>
+              <h2 class="profile-subtitle">Senior Creative Assistant, Klein LLC</h2>
+            </div>
+          </div>
+          <div class="profile-details">
+            <h3 class="profile-section-title">Personal Information</h3>
+            <ul class="profile-list">
+              <li class="profile-list-item"><strong>Name:</strong> Steve Morissette</li>
+              <li class="profile-list-item"><strong>Job Title:</strong> Senior Creative Assistant</li>
+              <li class="profile-list-item"><strong>Company:</strong> Klein LLC</li>
+              <li class="profile-list-item"><strong>Job Type:</strong> Coordinator</li>
+              <li class="profile-list-item"><strong>Email:</strong> Joanie.Nikolaus@hotmail.com</li>
+              <li class="profile-list-item"><strong>IP Address:</strong> 88.8.169.217</li>
+            </ul>
+            <h3 class="profile-section-title">Address</h3>
+            <ul class="profile-list">
+              <li class="profile-list-item"><strong>Street Address:</strong> 0586 Cloyd Lakes</li>
+              <li class="profile-list-item"><strong>City:</strong> Catherineshire</li>
+              <li class="profile-list-item"><strong>State:</strong> Texas</li>
+              <li class="profile-list-item"><strong>Zip Code:</strong> 24656-2097</li>
+              <li class="profile-list-item"><strong>Country:</strong> China</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h1>Users friends List</h1>
+      <div id="users"></div>
+      <div class="loading" style="display: none">Loading...</div>
+      
+
+    <script src="user.js"></script>
+  </body>
+</html>
